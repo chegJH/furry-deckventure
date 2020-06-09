@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/chegg/workShop/practice_cpp/deckGame/src/Card.h
+string
+-
+
+/Users/chegg/workShop/practice_cpp/deckGame/src/Deck.h
+vector
+-
+iostream
+-
+Card.h
+/Users/chegg/workShop/practice_cpp/deckGame/src/Card.h
+
+/Users/chegg/workShop/practice_cpp/deckGame/src/DeckGame.cpp
+DeckGame.h
+/Users/chegg/workShop/practice_cpp/deckGame/src/DeckGame.h
+iostream
+-
+
+/Users/chegg/workShop/practice_cpp/deckGame/src/DeckGame.h
+Deck.h
+/Users/chegg/workShop/practice_cpp/deckGame/src/Deck.h
+Player.h
+/Users/chegg/workShop/practice_cpp/deckGame/src/Player.h
+vector
+-
+
+/Users/chegg/workShop/practice_cpp/deckGame/src/Player.h
+string
+-
+

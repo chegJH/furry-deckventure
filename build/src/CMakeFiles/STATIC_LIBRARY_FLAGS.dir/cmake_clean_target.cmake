@@ -1,0 +1,3 @@
+file(REMOVE_RECURSE
+  "libSTATIC_LIBRARY_FLAGS.a"
+)

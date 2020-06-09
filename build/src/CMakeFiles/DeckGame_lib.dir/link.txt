@@ -1,0 +1,2 @@
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar qc libDeckGame_lib.a  CMakeFiles/DeckGame_lib.dir/Deck.cpp.o CMakeFiles/DeckGame_lib.dir/GameTable.cpp.o CMakeFiles/DeckGame_lib.dir/Player.cpp.o CMakeFiles/DeckGame_lib.dir/game.cpp.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib libDeckGame_lib.a

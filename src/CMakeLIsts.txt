@@ -1,0 +1,7 @@
+set(BINARY ${CMAKE_PROJECT_NAME})
+
+file(GLOB SOURCES Card.* Deck.* Player.* GameTable.* game.cpp)
+
+add_executable(game ${SOURCES})
+
+add_library(${BINARY}_lib STATIC ${SOURCES})
