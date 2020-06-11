@@ -1,6 +1,5 @@
 /Users/chegg/workShop/practice_cpp/deckGame/build/CMakeFiles/rebuild_cache.dir
 /Users/chegg/workShop/practice_cpp/deckGame/build/CMakeFiles/edit_cache.dir
-/Users/chegg/workShop/practice_cpp/deckGame/build/src/CMakeFiles/DeckGame_lib.dir
 /Users/chegg/workShop/practice_cpp/deckGame/build/src/CMakeFiles/rebuild_cache.dir
 /Users/chegg/workShop/practice_cpp/deckGame/build/src/CMakeFiles/edit_cache.dir
 /Users/chegg/workShop/practice_cpp/deckGame/build/src/CMakeFiles/game.dir

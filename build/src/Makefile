@@ -111,21 +111,6 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-src/CMakeFiles/DeckGame_lib.dir/rule:
-	cd /Users/chegg/workShop/practice_cpp/deckGame/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/DeckGame_lib.dir/rule
-.PHONY : src/CMakeFiles/DeckGame_lib.dir/rule
-
-# Convenience name for target.
-DeckGame_lib: src/CMakeFiles/DeckGame_lib.dir/rule
-
-.PHONY : DeckGame_lib
-
-# fast build rule for target.
-DeckGame_lib/fast:
-	cd /Users/chegg/workShop/practice_cpp/deckGame/build && $(MAKE) -f src/CMakeFiles/DeckGame_lib.dir/build.make src/CMakeFiles/DeckGame_lib.dir/build
-.PHONY : DeckGame_lib/fast
-
-# Convenience name for target.
 src/CMakeFiles/game.dir/rule:
 	cd /Users/chegg/workShop/practice_cpp/deckGame/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/game.dir/rule
 .PHONY : src/CMakeFiles/game.dir/rule
@@ -140,125 +125,113 @@ game/fast:
 	cd /Users/chegg/workShop/practice_cpp/deckGame/build && $(MAKE) -f src/CMakeFiles/game.dir/build.make src/CMakeFiles/game.dir/build
 .PHONY : game/fast
 
-Deck.o: Deck.cpp.o
+Core/Deck.o: Core/Deck.cpp.o
 
-.PHONY : Deck.o
-
-# target to build an object file
-Deck.cpp.o:
-	cd /Users/chegg/workShop/practice_cpp/deckGame/build && $(MAKE) -f src/CMakeFiles/DeckGame_lib.dir/build.make src/CMakeFiles/DeckGame_lib.dir/Deck.cpp.o
-	cd /Users/chegg/workShop/practice_cpp/deckGame/build && $(MAKE) -f src/CMakeFiles/game.dir/build.make src/CMakeFiles/game.dir/Deck.cpp.o
-.PHONY : Deck.cpp.o
-
-Deck.i: Deck.cpp.i
-
-.PHONY : Deck.i
-
-# target to preprocess a source file
-Deck.cpp.i:
-	cd /Users/chegg/workShop/practice_cpp/deckGame/build && $(MAKE) -f src/CMakeFiles/DeckGame_lib.dir/build.make src/CMakeFiles/DeckGame_lib.dir/Deck.cpp.i
-	cd /Users/chegg/workShop/practice_cpp/deckGame/build && $(MAKE) -f src/CMakeFiles/game.dir/build.make src/CMakeFiles/game.dir/Deck.cpp.i
-.PHONY : Deck.cpp.i
-
-Deck.s: Deck.cpp.s
-
-.PHONY : Deck.s
-
-# target to generate assembly for a file
-Deck.cpp.s:
-	cd /Users/chegg/workShop/practice_cpp/deckGame/build && $(MAKE) -f src/CMakeFiles/DeckGame_lib.dir/build.make src/CMakeFiles/DeckGame_lib.dir/Deck.cpp.s
-	cd /Users/chegg/workShop/practice_cpp/deckGame/build && $(MAKE) -f src/CMakeFiles/game.dir/build.make src/CMakeFiles/game.dir/Deck.cpp.s
-.PHONY : Deck.cpp.s
-
-GameTable.o: GameTable.cpp.o
-
-.PHONY : GameTable.o
+.PHONY : Core/Deck.o
 
 # target to build an object file
-GameTable.cpp.o:
-	cd /Users/chegg/workShop/practice_cpp/deckGame/build && $(MAKE) -f src/CMakeFiles/DeckGame_lib.dir/build.make src/CMakeFiles/DeckGame_lib.dir/GameTable.cpp.o
-	cd /Users/chegg/workShop/practice_cpp/deckGame/build && $(MAKE) -f src/CMakeFiles/game.dir/build.make src/CMakeFiles/game.dir/GameTable.cpp.o
-.PHONY : GameTable.cpp.o
+Core/Deck.cpp.o:
+	cd /Users/chegg/workShop/practice_cpp/deckGame/build && $(MAKE) -f src/CMakeFiles/game.dir/build.make src/CMakeFiles/game.dir/Core/Deck.cpp.o
+.PHONY : Core/Deck.cpp.o
 
-GameTable.i: GameTable.cpp.i
+Core/Deck.i: Core/Deck.cpp.i
 
-.PHONY : GameTable.i
+.PHONY : Core/Deck.i
 
 # target to preprocess a source file
-GameTable.cpp.i:
-	cd /Users/chegg/workShop/practice_cpp/deckGame/build && $(MAKE) -f src/CMakeFiles/DeckGame_lib.dir/build.make src/CMakeFiles/DeckGame_lib.dir/GameTable.cpp.i
-	cd /Users/chegg/workShop/practice_cpp/deckGame/build && $(MAKE) -f src/CMakeFiles/game.dir/build.make src/CMakeFiles/game.dir/GameTable.cpp.i
-.PHONY : GameTable.cpp.i
+Core/Deck.cpp.i:
+	cd /Users/chegg/workShop/practice_cpp/deckGame/build && $(MAKE) -f src/CMakeFiles/game.dir/build.make src/CMakeFiles/game.dir/Core/Deck.cpp.i
+.PHONY : Core/Deck.cpp.i
 
-GameTable.s: GameTable.cpp.s
+Core/Deck.s: Core/Deck.cpp.s
 
-.PHONY : GameTable.s
+.PHONY : Core/Deck.s
 
 # target to generate assembly for a file
-GameTable.cpp.s:
-	cd /Users/chegg/workShop/practice_cpp/deckGame/build && $(MAKE) -f src/CMakeFiles/DeckGame_lib.dir/build.make src/CMakeFiles/DeckGame_lib.dir/GameTable.cpp.s
-	cd /Users/chegg/workShop/practice_cpp/deckGame/build && $(MAKE) -f src/CMakeFiles/game.dir/build.make src/CMakeFiles/game.dir/GameTable.cpp.s
-.PHONY : GameTable.cpp.s
+Core/Deck.cpp.s:
+	cd /Users/chegg/workShop/practice_cpp/deckGame/build && $(MAKE) -f src/CMakeFiles/game.dir/build.make src/CMakeFiles/game.dir/Core/Deck.cpp.s
+.PHONY : Core/Deck.cpp.s
 
-Player.o: Player.cpp.o
+Core/Player.o: Core/Player.cpp.o
 
-.PHONY : Player.o
+.PHONY : Core/Player.o
 
 # target to build an object file
-Player.cpp.o:
-	cd /Users/chegg/workShop/practice_cpp/deckGame/build && $(MAKE) -f src/CMakeFiles/DeckGame_lib.dir/build.make src/CMakeFiles/DeckGame_lib.dir/Player.cpp.o
-	cd /Users/chegg/workShop/practice_cpp/deckGame/build && $(MAKE) -f src/CMakeFiles/game.dir/build.make src/CMakeFiles/game.dir/Player.cpp.o
-.PHONY : Player.cpp.o
+Core/Player.cpp.o:
+	cd /Users/chegg/workShop/practice_cpp/deckGame/build && $(MAKE) -f src/CMakeFiles/game.dir/build.make src/CMakeFiles/game.dir/Core/Player.cpp.o
+.PHONY : Core/Player.cpp.o
 
-Player.i: Player.cpp.i
+Core/Player.i: Core/Player.cpp.i
 
-.PHONY : Player.i
+.PHONY : Core/Player.i
 
 # target to preprocess a source file
-Player.cpp.i:
-	cd /Users/chegg/workShop/practice_cpp/deckGame/build && $(MAKE) -f src/CMakeFiles/DeckGame_lib.dir/build.make src/CMakeFiles/DeckGame_lib.dir/Player.cpp.i
-	cd /Users/chegg/workShop/practice_cpp/deckGame/build && $(MAKE) -f src/CMakeFiles/game.dir/build.make src/CMakeFiles/game.dir/Player.cpp.i
-.PHONY : Player.cpp.i
+Core/Player.cpp.i:
+	cd /Users/chegg/workShop/practice_cpp/deckGame/build && $(MAKE) -f src/CMakeFiles/game.dir/build.make src/CMakeFiles/game.dir/Core/Player.cpp.i
+.PHONY : Core/Player.cpp.i
 
-Player.s: Player.cpp.s
+Core/Player.s: Core/Player.cpp.s
 
-.PHONY : Player.s
+.PHONY : Core/Player.s
 
 # target to generate assembly for a file
-Player.cpp.s:
-	cd /Users/chegg/workShop/practice_cpp/deckGame/build && $(MAKE) -f src/CMakeFiles/DeckGame_lib.dir/build.make src/CMakeFiles/DeckGame_lib.dir/Player.cpp.s
-	cd /Users/chegg/workShop/practice_cpp/deckGame/build && $(MAKE) -f src/CMakeFiles/game.dir/build.make src/CMakeFiles/game.dir/Player.cpp.s
-.PHONY : Player.cpp.s
+Core/Player.cpp.s:
+	cd /Users/chegg/workShop/practice_cpp/deckGame/build && $(MAKE) -f src/CMakeFiles/game.dir/build.make src/CMakeFiles/game.dir/Core/Player.cpp.s
+.PHONY : Core/Player.cpp.s
 
-game.o: game.cpp.o
+Game/GameTable.o: Game/GameTable.cpp.o
 
-.PHONY : game.o
+.PHONY : Game/GameTable.o
 
 # target to build an object file
-game.cpp.o:
-	cd /Users/chegg/workShop/practice_cpp/deckGame/build && $(MAKE) -f src/CMakeFiles/DeckGame_lib.dir/build.make src/CMakeFiles/DeckGame_lib.dir/game.cpp.o
-	cd /Users/chegg/workShop/practice_cpp/deckGame/build && $(MAKE) -f src/CMakeFiles/game.dir/build.make src/CMakeFiles/game.dir/game.cpp.o
-.PHONY : game.cpp.o
+Game/GameTable.cpp.o:
+	cd /Users/chegg/workShop/practice_cpp/deckGame/build && $(MAKE) -f src/CMakeFiles/game.dir/build.make src/CMakeFiles/game.dir/Game/GameTable.cpp.o
+.PHONY : Game/GameTable.cpp.o
 
-game.i: game.cpp.i
+Game/GameTable.i: Game/GameTable.cpp.i
 
-.PHONY : game.i
+.PHONY : Game/GameTable.i
 
 # target to preprocess a source file
-game.cpp.i:
-	cd /Users/chegg/workShop/practice_cpp/deckGame/build && $(MAKE) -f src/CMakeFiles/DeckGame_lib.dir/build.make src/CMakeFiles/DeckGame_lib.dir/game.cpp.i
-	cd /Users/chegg/workShop/practice_cpp/deckGame/build && $(MAKE) -f src/CMakeFiles/game.dir/build.make src/CMakeFiles/game.dir/game.cpp.i
-.PHONY : game.cpp.i
+Game/GameTable.cpp.i:
+	cd /Users/chegg/workShop/practice_cpp/deckGame/build && $(MAKE) -f src/CMakeFiles/game.dir/build.make src/CMakeFiles/game.dir/Game/GameTable.cpp.i
+.PHONY : Game/GameTable.cpp.i
 
-game.s: game.cpp.s
+Game/GameTable.s: Game/GameTable.cpp.s
 
-.PHONY : game.s
+.PHONY : Game/GameTable.s
 
 # target to generate assembly for a file
-game.cpp.s:
-	cd /Users/chegg/workShop/practice_cpp/deckGame/build && $(MAKE) -f src/CMakeFiles/DeckGame_lib.dir/build.make src/CMakeFiles/DeckGame_lib.dir/game.cpp.s
-	cd /Users/chegg/workShop/practice_cpp/deckGame/build && $(MAKE) -f src/CMakeFiles/game.dir/build.make src/CMakeFiles/game.dir/game.cpp.s
-.PHONY : game.cpp.s
+Game/GameTable.cpp.s:
+	cd /Users/chegg/workShop/practice_cpp/deckGame/build && $(MAKE) -f src/CMakeFiles/game.dir/build.make src/CMakeFiles/game.dir/Game/GameTable.cpp.s
+.PHONY : Game/GameTable.cpp.s
+
+Game/game.o: Game/game.cpp.o
+
+.PHONY : Game/game.o
+
+# target to build an object file
+Game/game.cpp.o:
+	cd /Users/chegg/workShop/practice_cpp/deckGame/build && $(MAKE) -f src/CMakeFiles/game.dir/build.make src/CMakeFiles/game.dir/Game/game.cpp.o
+.PHONY : Game/game.cpp.o
+
+Game/game.i: Game/game.cpp.i
+
+.PHONY : Game/game.i
+
+# target to preprocess a source file
+Game/game.cpp.i:
+	cd /Users/chegg/workShop/practice_cpp/deckGame/build && $(MAKE) -f src/CMakeFiles/game.dir/build.make src/CMakeFiles/game.dir/Game/game.cpp.i
+.PHONY : Game/game.cpp.i
+
+Game/game.s: Game/game.cpp.s
+
+.PHONY : Game/game.s
+
+# target to generate assembly for a file
+Game/game.cpp.s:
+	cd /Users/chegg/workShop/practice_cpp/deckGame/build && $(MAKE) -f src/CMakeFiles/game.dir/build.make src/CMakeFiles/game.dir/Game/game.cpp.s
+.PHONY : Game/game.cpp.s
 
 # Help Target
 help:
@@ -266,22 +239,21 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... DeckGame_lib"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... game"
-	@echo "... Deck.o"
-	@echo "... Deck.i"
-	@echo "... Deck.s"
-	@echo "... GameTable.o"
-	@echo "... GameTable.i"
-	@echo "... GameTable.s"
-	@echo "... Player.o"
-	@echo "... Player.i"
-	@echo "... Player.s"
-	@echo "... game.o"
-	@echo "... game.i"
-	@echo "... game.s"
+	@echo "... Core/Deck.o"
+	@echo "... Core/Deck.i"
+	@echo "... Core/Deck.s"
+	@echo "... Core/Player.o"
+	@echo "... Core/Player.i"
+	@echo "... Core/Player.s"
+	@echo "... Game/GameTable.o"
+	@echo "... Game/GameTable.i"
+	@echo "... Game/GameTable.s"
+	@echo "... Game/game.o"
+	@echo "... Game/game.i"
+	@echo "... Game/game.s"
 .PHONY : help
 
 

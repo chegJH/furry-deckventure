@@ -4,10 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/chegg/workShop/practice_cpp/deckGame/src/Deck.cpp" "/Users/chegg/workShop/practice_cpp/deckGame/build/src/CMakeFiles/game.dir/Deck.cpp.o"
-  "/Users/chegg/workShop/practice_cpp/deckGame/src/GameTable.cpp" "/Users/chegg/workShop/practice_cpp/deckGame/build/src/CMakeFiles/game.dir/GameTable.cpp.o"
-  "/Users/chegg/workShop/practice_cpp/deckGame/src/Player.cpp" "/Users/chegg/workShop/practice_cpp/deckGame/build/src/CMakeFiles/game.dir/Player.cpp.o"
-  "/Users/chegg/workShop/practice_cpp/deckGame/src/game.cpp" "/Users/chegg/workShop/practice_cpp/deckGame/build/src/CMakeFiles/game.dir/game.cpp.o"
+  "/Users/chegg/workShop/practice_cpp/deckGame/src/Core/Deck.cpp" "/Users/chegg/workShop/practice_cpp/deckGame/build/src/CMakeFiles/game.dir/Core/Deck.cpp.o"
+  "/Users/chegg/workShop/practice_cpp/deckGame/src/Core/Player.cpp" "/Users/chegg/workShop/practice_cpp/deckGame/build/src/CMakeFiles/game.dir/Core/Player.cpp.o"
+  "/Users/chegg/workShop/practice_cpp/deckGame/src/Game/GameTable.cpp" "/Users/chegg/workShop/practice_cpp/deckGame/build/src/CMakeFiles/game.dir/Game/GameTable.cpp.o"
+  "/Users/chegg/workShop/practice_cpp/deckGame/src/Game/game.cpp" "/Users/chegg/workShop/practice_cpp/deckGame/build/src/CMakeFiles/game.dir/Game/game.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

@@ -57,72 +57,72 @@ include src/CMakeFiles/game.dir/progress.make
 # Include the compile flags for this target's objects.
 include src/CMakeFiles/game.dir/flags.make
 
-src/CMakeFiles/game.dir/Deck.cpp.o: src/CMakeFiles/game.dir/flags.make
-src/CMakeFiles/game.dir/Deck.cpp.o: ../src/Deck.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chegg/workShop/practice_cpp/deckGame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/game.dir/Deck.cpp.o"
-	cd /Users/chegg/workShop/practice_cpp/deckGame/build/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game.dir/Deck.cpp.o -c /Users/chegg/workShop/practice_cpp/deckGame/src/Deck.cpp
+src/CMakeFiles/game.dir/Core/Deck.cpp.o: src/CMakeFiles/game.dir/flags.make
+src/CMakeFiles/game.dir/Core/Deck.cpp.o: ../src/Core/Deck.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chegg/workShop/practice_cpp/deckGame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/game.dir/Core/Deck.cpp.o"
+	cd /Users/chegg/workShop/practice_cpp/deckGame/build/src && /usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game.dir/Core/Deck.cpp.o -c /Users/chegg/workShop/practice_cpp/deckGame/src/Core/Deck.cpp
 
-src/CMakeFiles/game.dir/Deck.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/game.dir/Deck.cpp.i"
-	cd /Users/chegg/workShop/practice_cpp/deckGame/build/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chegg/workShop/practice_cpp/deckGame/src/Deck.cpp > CMakeFiles/game.dir/Deck.cpp.i
+src/CMakeFiles/game.dir/Core/Deck.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/game.dir/Core/Deck.cpp.i"
+	cd /Users/chegg/workShop/practice_cpp/deckGame/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chegg/workShop/practice_cpp/deckGame/src/Core/Deck.cpp > CMakeFiles/game.dir/Core/Deck.cpp.i
 
-src/CMakeFiles/game.dir/Deck.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game.dir/Deck.cpp.s"
-	cd /Users/chegg/workShop/practice_cpp/deckGame/build/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chegg/workShop/practice_cpp/deckGame/src/Deck.cpp -o CMakeFiles/game.dir/Deck.cpp.s
+src/CMakeFiles/game.dir/Core/Deck.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game.dir/Core/Deck.cpp.s"
+	cd /Users/chegg/workShop/practice_cpp/deckGame/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chegg/workShop/practice_cpp/deckGame/src/Core/Deck.cpp -o CMakeFiles/game.dir/Core/Deck.cpp.s
 
-src/CMakeFiles/game.dir/GameTable.cpp.o: src/CMakeFiles/game.dir/flags.make
-src/CMakeFiles/game.dir/GameTable.cpp.o: ../src/GameTable.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chegg/workShop/practice_cpp/deckGame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/game.dir/GameTable.cpp.o"
-	cd /Users/chegg/workShop/practice_cpp/deckGame/build/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game.dir/GameTable.cpp.o -c /Users/chegg/workShop/practice_cpp/deckGame/src/GameTable.cpp
+src/CMakeFiles/game.dir/Core/Player.cpp.o: src/CMakeFiles/game.dir/flags.make
+src/CMakeFiles/game.dir/Core/Player.cpp.o: ../src/Core/Player.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chegg/workShop/practice_cpp/deckGame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/game.dir/Core/Player.cpp.o"
+	cd /Users/chegg/workShop/practice_cpp/deckGame/build/src && /usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game.dir/Core/Player.cpp.o -c /Users/chegg/workShop/practice_cpp/deckGame/src/Core/Player.cpp
 
-src/CMakeFiles/game.dir/GameTable.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/game.dir/GameTable.cpp.i"
-	cd /Users/chegg/workShop/practice_cpp/deckGame/build/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chegg/workShop/practice_cpp/deckGame/src/GameTable.cpp > CMakeFiles/game.dir/GameTable.cpp.i
+src/CMakeFiles/game.dir/Core/Player.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/game.dir/Core/Player.cpp.i"
+	cd /Users/chegg/workShop/practice_cpp/deckGame/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chegg/workShop/practice_cpp/deckGame/src/Core/Player.cpp > CMakeFiles/game.dir/Core/Player.cpp.i
 
-src/CMakeFiles/game.dir/GameTable.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game.dir/GameTable.cpp.s"
-	cd /Users/chegg/workShop/practice_cpp/deckGame/build/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chegg/workShop/practice_cpp/deckGame/src/GameTable.cpp -o CMakeFiles/game.dir/GameTable.cpp.s
+src/CMakeFiles/game.dir/Core/Player.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game.dir/Core/Player.cpp.s"
+	cd /Users/chegg/workShop/practice_cpp/deckGame/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chegg/workShop/practice_cpp/deckGame/src/Core/Player.cpp -o CMakeFiles/game.dir/Core/Player.cpp.s
 
-src/CMakeFiles/game.dir/Player.cpp.o: src/CMakeFiles/game.dir/flags.make
-src/CMakeFiles/game.dir/Player.cpp.o: ../src/Player.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chegg/workShop/practice_cpp/deckGame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/game.dir/Player.cpp.o"
-	cd /Users/chegg/workShop/practice_cpp/deckGame/build/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game.dir/Player.cpp.o -c /Users/chegg/workShop/practice_cpp/deckGame/src/Player.cpp
+src/CMakeFiles/game.dir/Game/game.cpp.o: src/CMakeFiles/game.dir/flags.make
+src/CMakeFiles/game.dir/Game/game.cpp.o: ../src/Game/game.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chegg/workShop/practice_cpp/deckGame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/game.dir/Game/game.cpp.o"
+	cd /Users/chegg/workShop/practice_cpp/deckGame/build/src && /usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game.dir/Game/game.cpp.o -c /Users/chegg/workShop/practice_cpp/deckGame/src/Game/game.cpp
 
-src/CMakeFiles/game.dir/Player.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/game.dir/Player.cpp.i"
-	cd /Users/chegg/workShop/practice_cpp/deckGame/build/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chegg/workShop/practice_cpp/deckGame/src/Player.cpp > CMakeFiles/game.dir/Player.cpp.i
+src/CMakeFiles/game.dir/Game/game.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/game.dir/Game/game.cpp.i"
+	cd /Users/chegg/workShop/practice_cpp/deckGame/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chegg/workShop/practice_cpp/deckGame/src/Game/game.cpp > CMakeFiles/game.dir/Game/game.cpp.i
 
-src/CMakeFiles/game.dir/Player.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game.dir/Player.cpp.s"
-	cd /Users/chegg/workShop/practice_cpp/deckGame/build/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chegg/workShop/practice_cpp/deckGame/src/Player.cpp -o CMakeFiles/game.dir/Player.cpp.s
+src/CMakeFiles/game.dir/Game/game.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game.dir/Game/game.cpp.s"
+	cd /Users/chegg/workShop/practice_cpp/deckGame/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chegg/workShop/practice_cpp/deckGame/src/Game/game.cpp -o CMakeFiles/game.dir/Game/game.cpp.s
 
-src/CMakeFiles/game.dir/game.cpp.o: src/CMakeFiles/game.dir/flags.make
-src/CMakeFiles/game.dir/game.cpp.o: ../src/game.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chegg/workShop/practice_cpp/deckGame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/game.dir/game.cpp.o"
-	cd /Users/chegg/workShop/practice_cpp/deckGame/build/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game.dir/game.cpp.o -c /Users/chegg/workShop/practice_cpp/deckGame/src/game.cpp
+src/CMakeFiles/game.dir/Game/GameTable.cpp.o: src/CMakeFiles/game.dir/flags.make
+src/CMakeFiles/game.dir/Game/GameTable.cpp.o: ../src/Game/GameTable.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chegg/workShop/practice_cpp/deckGame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/game.dir/Game/GameTable.cpp.o"
+	cd /Users/chegg/workShop/practice_cpp/deckGame/build/src && /usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game.dir/Game/GameTable.cpp.o -c /Users/chegg/workShop/practice_cpp/deckGame/src/Game/GameTable.cpp
 
-src/CMakeFiles/game.dir/game.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/game.dir/game.cpp.i"
-	cd /Users/chegg/workShop/practice_cpp/deckGame/build/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chegg/workShop/practice_cpp/deckGame/src/game.cpp > CMakeFiles/game.dir/game.cpp.i
+src/CMakeFiles/game.dir/Game/GameTable.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/game.dir/Game/GameTable.cpp.i"
+	cd /Users/chegg/workShop/practice_cpp/deckGame/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chegg/workShop/practice_cpp/deckGame/src/Game/GameTable.cpp > CMakeFiles/game.dir/Game/GameTable.cpp.i
 
-src/CMakeFiles/game.dir/game.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game.dir/game.cpp.s"
-	cd /Users/chegg/workShop/practice_cpp/deckGame/build/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chegg/workShop/practice_cpp/deckGame/src/game.cpp -o CMakeFiles/game.dir/game.cpp.s
+src/CMakeFiles/game.dir/Game/GameTable.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game.dir/Game/GameTable.cpp.s"
+	cd /Users/chegg/workShop/practice_cpp/deckGame/build/src && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chegg/workShop/practice_cpp/deckGame/src/Game/GameTable.cpp -o CMakeFiles/game.dir/Game/GameTable.cpp.s
 
 # Object files for target game
 game_OBJECTS = \
-"CMakeFiles/game.dir/Deck.cpp.o" \
-"CMakeFiles/game.dir/GameTable.cpp.o" \
-"CMakeFiles/game.dir/Player.cpp.o" \
-"CMakeFiles/game.dir/game.cpp.o"
+"CMakeFiles/game.dir/Core/Deck.cpp.o" \
+"CMakeFiles/game.dir/Core/Player.cpp.o" \
+"CMakeFiles/game.dir/Game/game.cpp.o" \
+"CMakeFiles/game.dir/Game/GameTable.cpp.o"
 
 # External object files for target game
 game_EXTERNAL_OBJECTS =
 
-src/game: src/CMakeFiles/game.dir/Deck.cpp.o
-src/game: src/CMakeFiles/game.dir/GameTable.cpp.o
-src/game: src/CMakeFiles/game.dir/Player.cpp.o
-src/game: src/CMakeFiles/game.dir/game.cpp.o
+src/game: src/CMakeFiles/game.dir/Core/Deck.cpp.o
+src/game: src/CMakeFiles/game.dir/Core/Player.cpp.o
+src/game: src/CMakeFiles/game.dir/Game/game.cpp.o
+src/game: src/CMakeFiles/game.dir/Game/GameTable.cpp.o
 src/game: src/CMakeFiles/game.dir/build.make
 src/game: src/CMakeFiles/game.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/chegg/workShop/practice_cpp/deckGame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable game"

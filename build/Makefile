@@ -111,19 +111,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named DeckGame_lib
-
-# Build rule for target.
-DeckGame_lib: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 DeckGame_lib
-.PHONY : DeckGame_lib
-
-# fast build rule for target.
-DeckGame_lib/fast:
-	$(MAKE) -f src/CMakeFiles/DeckGame_lib.dir/build.make src/CMakeFiles/DeckGame_lib.dir/build
-.PHONY : DeckGame_lib/fast
-
-#=============================================================================
 # Target rules for targets named game
 
 # Build rule for target.
@@ -144,7 +131,6 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... DeckGame_lib"
 	@echo "... game"
 .PHONY : help
 

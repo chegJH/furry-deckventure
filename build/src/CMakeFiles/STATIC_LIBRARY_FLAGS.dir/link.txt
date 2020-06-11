@@ -1,2 +1,0 @@
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar qc libSTATIC_LIBRARY_FLAGS.a  CMakeFiles/STATIC_LIBRARY_FLAGS.dir/DeckGame.cpp.o
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib libSTATIC_LIBRARY_FLAGS.a
