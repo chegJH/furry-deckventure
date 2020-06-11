@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/game.dir/Deck.cpp.o"
-  "CMakeFiles/game.dir/GameTable.cpp.o"
-  "CMakeFiles/game.dir/Player.cpp.o"
-  "CMakeFiles/game.dir/game.cpp.o"
+  "CMakeFiles/game.dir/Core/Deck.cpp.o"
+  "CMakeFiles/game.dir/Core/Player.cpp.o"
+  "CMakeFiles/game.dir/Game/game.cpp.o"
+  "CMakeFiles/game.dir/Game/GameTable.cpp.o"
   "game.pdb"
   "game"
 )

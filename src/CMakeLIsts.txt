@@ -1,7 +1,4 @@
-set(BINARY ${CMAKE_PROJECT_NAME})
+include(Core/CMakeLists.txt)
+include(Game/CMakeLists.txt)
 
-file(GLOB SOURCES Card.* Deck.* Player.* GameTable.* game.cpp)
-
-add_executable(game ${SOURCES})
-
-add_library(${BINARY}_lib STATIC ${SOURCES})
+# add_executable(game ${game_SOURCES})
