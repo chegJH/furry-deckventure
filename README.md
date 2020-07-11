@@ -1,5 +1,6 @@
 # furry-deckventure
 Standard 52 Cards Deck
+
 _Card_, a card includes a Suit and a Value which is a char in range from '1' to 'A'.
 
 _Deck_ is a containner of Cards.
