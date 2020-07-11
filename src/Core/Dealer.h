@@ -2,30 +2,23 @@
 #define DEALER_H
 #include "Deck.h"
 #include "Player.h"
-#include <memory>
 
-class Dealer:public Person{
+class Dealer : public Person
+{
 
-    double money;
-    Deck* deck;
+    double houseMoney_ = 1000;
+    Deck deck_;
 
-    public:
-    Dealer(){}
-    Dealer(string name, double val = 0):Person(name){
-        deck = new Deck();
-        money = val;
-    }
-    Deck* getDeck()
+public:
+    Dealer():Dealer(std::string("DefaultDealer")){}
+    
+    Dealer(string name) : Person(name)
     {
-        return deck;
+        deck_.init();
     }
 
-    void dealCard(Player& ply)
-    {
-        ply.AddHandCard(deck->DrawFromTop());
-    }
-
-
-
+    void dealCardTo(Player &player);
+    void takeMoneyFrom(Player &player, unsigned int value);
+    void giveMOneyTo(Player &player, unsigned int value);
 };
 #endif

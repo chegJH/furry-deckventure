@@ -1,33 +1,30 @@
-#ifndef DECK
+// #ifndef DECK
+#pragma once
 #include <vector>
 #include <iostream>
-#include <memory>
+#include <vector>
 #include "Card.h"
-#include "UnCopyable.h"
 using namespace std;
 
 class Deck
 {
-    vector<shared_ptr<Card>> cards;
-    size_t topCounter = 0;
+    public : 
+    vector<Card> deck;
 
-public:
-    // Deck& operator&(const Deck&) = delete;
     Deck()
-    { //form a new pack of deck
-        for (size_t i = 0; i < 4; ++i)
-            for (size_t j = 0; j < 14; ++j)
-            {
-                cards.push_back(make_shared<Card>(i,j));
-            }
+    {
+        deck = {};
     }
+    void init();
     void Shuffle();
-    int size(){return cards.size();}
-    shared_ptr<Card> DrawFromTop();
-    // Card& DrawFromN(size_t nthCard);
+    unsigned int getSize();
+    Card DrawFromTop();
+    Card DrawFromN(unsigned int nthCard);
 
     // vector<shared_ptr<Card>>& getCards() { return cards; }
     // shared_ptr<Card> getCards() {return cards;}
     void showDeck();
+    friend ostream& operator<<(ostream& os, const Deck& deck);
 };
-#endif 
+
+// #endif

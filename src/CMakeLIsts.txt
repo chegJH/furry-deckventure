@@ -1,4 +1,4 @@
 include(Core/CMakeLists.txt)
 include(Game/CMakeLists.txt)
-
-# add_executable(game ${game_SOURCES})
+# include(ServerClient/CMakeLists.txt)
+# include(MultiThread/CMakeLists.txt)

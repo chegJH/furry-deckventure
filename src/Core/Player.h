@@ -1,38 +1,35 @@
-#ifndef PLAYER
-#define PLAYER
+// #ifndef PLAYER
+// #define PLAYER
+#pragma once
 #include<vector>
 #include<iostream>
 #include "Person.h"
-#include "Card.h"
+#include "Deck.h"
 
 using namespace std;
 class Player: public Person{
-    double money;
-    // vector<Card> handCards;
-    vector<shared_ptr<Card>> handCards;
+    double money_;
+    int score_;
+    Deck* deck_{nullptr};
+    vector<Card>* handCards_{nullptr};
 
-    double withdrawMoney();
-    void substractMoney(double amount);
+    void withdrawMoney();
+    void drawMoney(double amount);
 
 
     public:
-    // Player& operator&= (const Player& p){
-    //     this->money = p.money;
-    //     this->handCards = move(p.handCards);
-    //     this->name = p.name;
-    // }
-    Player(const string& name, double money):Person(name),money(money){
-        cout<<"\nWelcome to the game "<<name<<'\n';
-    }
+    friend class Dealer;
+    Player();
+    ~Player();
+    Player(const string name, double money);
+    Player& operator= (const Player&);
 
     void addMoney(double amount);
 
-    const inline string getPlayerName() {return name;}
-    const inline double getPlayerScore() {return this->money;}
-    // vector<Card>& getPlayerHands() {return handCards;}
-    // void AddHandCard(Card& card){handCards.push_back(Card(card));}
-    void AddHandCard(shared_ptr<Card> card);
+    int getScore();
+    string getName();
+    void addCard(const Card& card);
     void showHandCards();
 };
 
-#endif
+// #endif

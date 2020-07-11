@@ -1,25 +1,22 @@
 #include <iostream>
-#include "GameTable.h"
+#include "Table.h"
+#include <vector>
+using namespace std;
+
 int main()
 {
-    using namespace std;
-    cout<<"Welcom to the Deck Game\n";
 
-    GameTable m_game;
-    m_game.showDeck();
+    // vector<Table> openTables = {Table()};
+    // Table& table = openTables.front();
+    Table table = Table();
+    Player p1 = Player("Jay",500);
+    Player p2 = Player("Tina",500);
+    Player p3 = Player("Noah",500);
+    table.join(p1);
+    table.join(p2);
+    table.join(p3);
 
-    m_game.Shuffle();
-    m_game.showDeck();
-
-    //add player
-    m_game.addPlayer("Jay",1000);
-    m_game.addPlayer("Tina",1);
-
-    for(Player& p:m_game.getPlayerList()){
-        m_game.dealCardsToPlayer(p);
-        p.showHandCards();
-    }
-    m_game.showDeck();
-
+    table.start();
+    
     return 0;
 }

@@ -1,33 +1,57 @@
 #include "Player.h"
 
-void Player::addMoney(double money){
-    this->money += money;
-}
-
-double Player::withdrawMoney(){
-    double amount = money;
-    money = 0;
-    return amount;
-}
-
-void Player::substractMoney(double amount){
-    this->money-=amount;
-}
-
-void Player::AddHandCard(shared_ptr<Card> card)
+Player::Player() : Player(string("Player_Name_default"), 0)
 {
-    shared_ptr<Card> newHandCard = card;
-    cout<<"New Card for Player "<<name<<'\n'
-    <<"\tcard :"<<newHandCard->getSuit()<<newHandCard->getValue()<<'\n'
-    <<"\tcard count:"<<newHandCard.use_count()<<'\n';
-    handCards.push_back(newHandCard);
 }
-void Player::showHandCards(){
-    cout<<this->name<<"'s handCards:\n";
-    for(auto card:handCards)
-    {
-        cout<<card->getSuit()<<card->getValue()<<' ';
-    }
-    cout<<'\n';
+Player::Player(const string name, double money) : Person(name), money_(money)
+{
+    cout << "\nWelcome to the game " << getName() << '\n';
+}
+void Player::addMoney(double money)
+{
+    this->money_ += money_;
+}
 
+void Player::withdrawMoney()
+{
+    money_ = 0;
+}
+
+void Player::drawMoney(double amount)
+{
+    money_ -= amount;
+}
+
+//move given card to player hands
+void Player::addCard(const Card &card)
+{
+    if (deck_ == nullptr)
+    {
+        deck_ = new Deck();
+        handCards_ = &deck_->deck;
+        handCards_->push_back(std::move(card));
+    }
+    else
+    {
+        handCards_->push_back(std::move(card));
+
+    }
+    cout << getName() << " got card:"
+         << card << '\n';
+}
+void Player::showHandCards()
+{
+    cout << getName() << " handCards:\n"
+         << deck_;
+}
+
+string Player::getName()
+{
+    return Person::getName();
+}
+
+Player::~Player()
+{
+    delete deck_;
+    cout << "Remove property for " << getName();
 }

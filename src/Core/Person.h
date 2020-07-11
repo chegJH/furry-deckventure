@@ -5,13 +5,14 @@
 using namespace std;
 struct Person{
 
-    string name;
+    protected:
+    string name_;
 
-    Person(){}
-    // Person& operator&=(const Person& p){
-    //     this->name = p.name;
-    //     return *this;
-    // }
-    Person(string name):name(name){}
+    public:
+    Person();
+    Person(string name):name_(name){}
+    string getName();
 };
+
+
 #endif

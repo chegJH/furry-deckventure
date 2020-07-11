@@ -1,30 +1,58 @@
 #include "Deck.h"
-#include<random>
-// #include <memory>
+#include <random>
 #include <algorithm>
 
-shared_ptr<Card> Deck::DrawFromTop()
+void Deck::init()
 {
-    size_t frontCardIndex = topCounter++;
-    return cards.at(frontCardIndex);
-    // clog<<"Deck::DrawFromTop topCounter:"<<topCounter<<'\n';
+    deck.reserve(56);
+    for (size_t i = 0; i < 4; ++i)
+        for (size_t j = 0; j < 14; ++j)
+        {
+            deck.emplace_back(i,j);
+        }
 }
-int myrandom(int i){return std::rand()%i; }
 
-void Deck::Shuffle(){
+//Draw top card from deck.
+//the card is removed from deck and return a copy of it. 
+Card Deck::DrawFromTop()
+{
+    Card topCard = deck.back();
+    deck.pop_back();
+    return topCard;
+}
+Card Deck::DrawFromN(unsigned int nth_element)
+{
+    Card nCard = deck[nth_element];
+    deck.erase(deck.begin()+nth_element);
+    return nCard;
+}
+
+int myrandom(int i) { return std::rand() % i; }
+
+void Deck::Shuffle()
+{
     std::random_device rd;
     std::mt19937 gen(rd());
-    std::shuffle(cards.begin(),cards.end(),gen);
+    std::shuffle(deck.begin(), deck.end(), gen);
 }
 
-void Deck::showDeck(){
-    cout<<"Current valid Card in Deck:\n";
-    for(auto p_card = cards.begin()+topCounter; 
-    p_card!=cards.end();
-    p_card++){
-        
-        cout<<p_card->get()->getSuit()
-        <<p_card->get()->getValue()<<' ';
+void Deck::showDeck()
+{
+    cout<<*this;
+}
+ostream& operator << (std::ostream& os, const Deck& deck)
+{
+    cout << "Current valid Card in Deck:\n";
+    for (auto card = deck.deck.begin();
+         card != deck.deck.end();
+         card++)
+    {
+        os<<*card<<' ';
     }
-    cout<<"\n";
+    cout << "\n";
+    return os;
+}
+
+unsigned int Deck::getSize(){
+    return deck.size();
 }
