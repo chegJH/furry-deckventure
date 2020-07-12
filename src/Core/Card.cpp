@@ -1,5 +1,7 @@
 #include "Card.h"
 
+const string Card::Values[]= {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"};
+
 Card& Card::operator=(const Card& other)
 {
     cardSuit_ = other.cardSuit_;

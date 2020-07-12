@@ -15,7 +15,7 @@ class Card
         Spade,
         Club
     };
-    const string Values[14] = {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"};
+    static const string Values[14];// = {"1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"};
 
 protected:
     Suit cardSuit_;
